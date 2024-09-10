@@ -1,16 +1,11 @@
 # fatmug
 
-
-## Set Up Your Environment
 Install Python: Ensure Python 3.6 or later is installed on your system.
 
-## Set Up Your Environment
 Make sure you have the following installed on your system:
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-
-Install Python: Ensure Python 3.6 or later is installed on your system.
 
 docker-compose up --build
 
