@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- videos/templates/videos/list.html -->
+<h1>Uploaded Videos</h1>
+<ul>
+    {% for video in videos %}
+    <li>
+        <strong>{{ video.title }}</strong>
+        <video width="320" height="240" controls>
+            <source src="{{ video.video_file.url }}" type="video/mp4">
+        </video>
+        {% if video.subtitle_file %}
+            <a href="{{ video.subtitle_file.url }}">Download Subtitles</a>
+        {% else %}
+            No subtitles available.
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
