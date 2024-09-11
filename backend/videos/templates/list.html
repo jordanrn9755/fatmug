@@ -15,11 +15,6 @@
         <video width="320" height="240" controls>
             <source src="{{ video.video_file.url }}" type="video/mp4">
         </video>
-        {% if video.subtitle_file %}
-            <a href="{{ video.subtitle_file.url }}">Download Subtitles</a>
-        {% else %}
-            No subtitles available.
-        {% endif %}
     </li>
     {% endfor %}
 </ul>
